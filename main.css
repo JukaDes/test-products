@@ -64,6 +64,9 @@ button {
     padding: 0 16px;
   }
 }
+.gallery {
+  background-image: linear-gradient(#FFF5F6 21%, #ffffff 21%);
+}
 
 .products {
   padding: 60px 0;
@@ -91,11 +94,13 @@ button {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #D41443;
-  margin-bottom: 8px;
+  margin-bottom: 148px;
 }
 
 .products__item {
-  padding: 60px;
+  border-radius: 24px;
+  margin-top: 140px;
+  padding: 10px;
 }
 
 .products__item--pink {
@@ -125,40 +130,47 @@ button {
 .products__item--pink::before {
   content: "";
   display: block;
-  width: 280px;
-  height: 280px;
+  width: 260px;
+  height: 260px;
   background-image: url(./images/phone/image1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   margin-bottom: 20px;
+  transform: translateY(-50%);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .products__item--peach::before {
   content: "";
   display: block;
-  width: 280px;
-  height: 280px;
+  width: 260px;
+  height: 260px;
   background-image: url(./images/phone/image2.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   margin-bottom: 20px;
+  transform: translateY(-50%);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .products__item--green::before {
   content: "";
   display: block;
-  width: 280px;
-  height: 280px;
+  width: 260px;
+  height: 260px;
   background-image: url(./images/phone/image3.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   margin-bottom: 20px;
+  transform: translateY(-50%);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .products__text {
+  width: 200px;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
@@ -167,6 +179,9 @@ button {
   text-align: center;
   letter-spacing: 0.04em;
   color: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
 }
 
 .products__text::before {
@@ -180,14 +195,21 @@ button {
   background-position: center;
   margin-top: 32px;
   margin-bottom: 32px;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .products__button {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #fff;
-  border: none;
+  margin-bottom: 40px;
+}
+
+.products__button-icon {
+  width: 40px;
+  height: 40px;
 }
 
 @media screen and (min-width: 768px) {
