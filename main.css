@@ -64,9 +64,6 @@ button {
     padding: 0 16px;
   }
 }
-.gallery {
-  background-image: linear-gradient(#FFF5F6 21%, #ffffff 21%);
-}
 
 .products {
   padding: 60px 0;
