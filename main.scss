@@ -128,15 +128,40 @@ button {
     color: #FFFFFF;
 }
 
-.products__name::before {
+.products__item--pink::before {
     content: "";
     display: block;
     width: 280px;
     height: 280px;
-    background-image: url(../../images/mobile/products/image1.png);
+    background-image: url(./images/phone/image1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin-bottom: 20px;
+}
+
+.products__item--peach::before {
+    content: "";
+    display: block;
+    width: 280px;
+    height: 280px;
+    background-image: url(./images/phone/image2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.products__item--green::before {
+    content: "";
+    display: block;
+    width: 280px;
+    height: 280px;
+    background-image: url(./images/phone/image3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
 }
 
 .products__text {
@@ -148,6 +173,19 @@ button {
     text-align: center;
     letter-spacing: 0.04em;
     color: #FFFFFF;
+}
+
+.products__text::before {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 6px;
+    background-image: url(./images/sprite.svg#products-separate);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 .products__button {
