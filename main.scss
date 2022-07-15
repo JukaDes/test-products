@@ -54,6 +54,26 @@ button {
     line-height: 0;
 }
 
+.button_theme-light {
+    color: #d41443;
+    background-color: #ffffff;
+}
+
+.button__icon_theme-light {
+    margin-left: 15px;
+    stroke: #d41443;
+}
+
+.button_theme-dark {
+    color: #ffffff;
+    background-color: #d41342;
+}
+
+.button__icon_theme-dark {
+    margin-left: 8px;
+    stroke: #ffffff;
+}
+
 .container {
     width: 100%;
     padding: 0 20px;
@@ -84,6 +104,24 @@ button {
     background-image: linear-gradient(#FFF5F6 21%, #ffffff 21%);
 }
 
+.button {
+    height: 44px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    cursor: pointer;
+    border-radius: 22px;
+}
+
+
+
+
+// ================= MY SECTION ================
+
+
+
+
+
 .products {
     padding: 60px 0;
 }
@@ -93,7 +131,7 @@ button {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 1.17;
     text-align: center;
     text-transform: uppercase;
     color: #FFA5BA;
@@ -105,7 +143,7 @@ button {
     font-style: normal;
     font-weight: 400;
     font-size: 34px;
-    line-height: 39px;
+    line-height: 1.15;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -136,7 +174,7 @@ button {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.15;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -152,7 +190,7 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 20px;
-    transform: translateY(-50%);
+    transform: translateY(-55%);
     margin-left: auto;
     margin-right: auto;
 }
@@ -166,7 +204,7 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 20px;
-    transform: translateY(-50%);
+    transform: translateY(-55%);
     margin-left: auto;
     margin-right: auto;
 }
@@ -180,7 +218,7 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 20px;
-    transform: translateY(-50%);
+    transform: translateY(-55%);
     margin-left: auto;
     margin-right: auto;
 }
@@ -231,6 +269,19 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+
+    .products__suptitle {
+        font-size: 26px;
+        line-height: 1.15;
+        margin-bottom: 18px;
+    }
+    
+    .products__title {
+        font-size: 48px;
+        line-height: 1.15;
+        margin-bottom: 20px;
+    }
+
     .products__list {
         display: flex;
         justify-content: center;
@@ -238,64 +289,57 @@ button {
 
     .products__item {
         width: calc((100% - 32px) / 3);
+        margin-top: 170px;
     }
 
     .products__item:not(:last-child) {
         margin-right: 16px;
     }
 
-        .section__suptitle {
-            font-size: 26px;
-            line-height: 1.15;
-            margin-bottom: 18px;
-        }
-    
-        .section__title {
-            font-size: 48px;
-            line-height: 1.15;
-            margin-bottom: 20px;
-        }
+    .products__item--pink::before,
+    .products__item--peach::before,
+    .products__item--green::before {
+        width: 224px;
+        height: 224px;
+        transform: translateY(-70%);
+    }
+
+    .products__text {
+        line-height: 1.76;
+    }
 }
 
 @media screen and (min-width: 1200px) {
-    .section__suptitle {
+
+    .products__suptitle {
         margin-bottom: 16px;
     }
 
     .products__item {
         width: calc((100% - 64px) / 3);
+        margin-top: 281px;
     }
 
     .products__item:not(:last-child) {
         margin-right: 32px;
     }
+
+    .products__name {
+        font-size: 30px;
+        line-height: 1.13;
+    }
+
+
+    .products__item--pink::before,
+    .products__item--peach::before,
+    .products__item--green::before {
+        width: 368px;
+        height: 394px;
+    }
+
+    .products__text {
+        font-size: 16px;
+    }
+
 }
 
-.button {
-    height: 44px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
-    cursor: pointer;
-    border-radius: 22px;
-}
-
-.button_theme-light {
-    color: #d41443;
-    background-color: #ffffff;
-}
-
-.button__icon_theme-light {
-    margin-left: 15px;
-    stroke: #d41443;
-}
-
-.button_theme-dark {
-    color: #ffffff;
-    background-color: #d41342;
-}
-
-.button__icon_theme-dark {
-    margin-left: 8px;
-    stroke: #ffffff;
-}
