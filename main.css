@@ -41,6 +41,13 @@ button {
   line-height: 0;
 }
 
+body {
+  color: #000;
+  background-color: #fff;
+  font-family: DM Sans, sans-serif;
+  margin: 0;
+}
+
 .button_theme-light {
   color: #d41443;
   background-color: #ffffff;
@@ -103,8 +110,6 @@ button {
 
 .products__suptitle {
   font-family: "Titan One";
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.17;
   text-align: center;
@@ -115,7 +120,6 @@ button {
 
 .products__title {
   font-family: "Titan One";
-  font-style: normal;
   font-weight: 400;
   font-size: 34px;
   line-height: 1.15;
@@ -147,7 +151,6 @@ button {
 
 .products__name {
   font-family: "Titan One";
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.15;
@@ -200,10 +203,42 @@ button {
   transform: translate(-50%, -50%);
 }
 
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .products__item--pink::before {
+    background-image: url(./images/phone/image1@2x.png);
+  }
+  .products__item--peach::before {
+    background-image: url(./images/phone/image2@2x.png);
+  }
+  .products__item--green::before {
+    background-image: url(./images/phone/image3@2x.png);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .products__item--pink::before {
+    background-image: url(./images/tablet/image1@2x.png);
+  }
+  .products__item--peach::before {
+    background-image: url(./images/tablet/image2@2x.png);
+  }
+  .products__item--green::before {
+    background-image: url(./images/tablet/image3@2x.png);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .products__item--pink::before {
+    background-image: url(./images/desktop/image1@2x.png);
+  }
+  .products__item--peach::before {
+    background-image: url(./images/desktop/image2@2x.png);
+  }
+  .products__item--green::before {
+    background-image: url(./images/desktop/image3@2x.png);
+  }
+}
 .products__text {
   width: 200px;
   font-family: "DM Sans";
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
