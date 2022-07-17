@@ -238,7 +238,6 @@ body {
 }
 .products__text {
   width: 200px;
-  font-family: "DM Sans";
   font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
@@ -260,9 +259,9 @@ body {
   background-size: cover;
   background-position: center;
   margin: 32px auto;
-  stroke: #fff;
-  fill: #fff;
-  color: #fff;
+  stroke: #FFFFFF;
+  fill: #FFFFFF;
+  color: #FFFFFF;
 }
 
 .products__button {
@@ -275,6 +274,10 @@ body {
   border: transparent;
   border-radius: 50%;
   background-color: #FFFFFF;
+  background-image: url(./images/phone/arrow-right@2x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   cursor: pointer;
 }
 

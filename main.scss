@@ -139,7 +139,7 @@ body {
     line-height: 1.17;
     text-align: center;
     text-transform: uppercase;
-    color: #FFA5BA;
+    color: $secondaryAccentColor;
     margin-bottom: 15px;
 }
 
@@ -151,7 +151,7 @@ body {
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #D41443;
+    color: $accentColor;
     margin-bottom: 8px;
 }
 
@@ -182,7 +182,7 @@ body {
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: $mainColor;
     margin-top: 160px;
 }
 
@@ -279,13 +279,12 @@ screen and (min-resolution: 2dppx) {
 
 .products__text {
     width: 200px;
-    font-family: "DM Sans";
     font-weight: 700;
     font-size: 14px;
     line-height: 1.52;
     text-align: center;
     letter-spacing: 0.04em;
-    color: #FFFFFF;
+    color: $mainColor;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 32px;
@@ -301,9 +300,9 @@ screen and (min-resolution: 2dppx) {
     background-size: cover;
     background-position: center;
     margin: 32px auto;
-    stroke: #fff;
-    fill: #fff;
-    color: #fff;
+    stroke: $mainColor;
+    fill: $mainColor;
+    color: $mainColor;
 }
 
 .products__button {
@@ -315,7 +314,13 @@ screen and (min-resolution: 2dppx) {
     margin-bottom: 40px;
     border: transparent;
     border-radius: 50%;
-    background-color: #FFFFFF;
+
+    background-color: $mainColor;
+    background-image: url(./images/phone/arrow-right@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
     cursor: pointer;
 }
 
