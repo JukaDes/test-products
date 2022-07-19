@@ -212,39 +212,6 @@ body {
   transform: translate(-50%, -50%);
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .products__item--pink::before {
-    background-image: url(./images/phone/image1@2x.png);
-  }
-  .products__item--peach::before {
-    background-image: url(./images/phone/image2@2x.png);
-  }
-  .products__item--green::before {
-    background-image: url(./images/phone/image3@2x.png);
-  }
-}
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .products__item--pink::before {
-    background-image: url(./images/tablet/image1@2x.png);
-  }
-  .products__item--peach::before {
-    background-image: url(./images/tablet/image2@2x.png);
-  }
-  .products__item--green::before {
-    background-image: url(./images/tablet/image3@2x.png);
-  }
-}
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .products__item--pink::before {
-    background-image: url(./images/desktop/image1@2x.png);
-  }
-  .products__item--peach::before {
-    background-image: url(./images/desktop/image2@2x.png);
-  }
-  .products__item--green::before {
-    background-image: url(./images/desktop/image3@2x.png);
-  }
-}
 .products__text {
   position: relative;
   font-weight: 700;
@@ -340,6 +307,7 @@ body {
     margin-bottom: 280px;
   }
   .products__item {
+    max-width: 368px;
     width: calc((100% - 64px) / 3);
     padding: 165px 60px 60px 60px;
   }
@@ -370,5 +338,38 @@ body {
   }
   .products__text {
     font-size: 16px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .products__item--pink::before {
+    background-image: url(./images/phone/image1@2x.png);
+  }
+  .products__item--peach::before {
+    background-image: url(./images/phone/image2@2x.png);
+  }
+  .products__item--green::before {
+    background-image: url(./images/phone/image3@2x.png);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .products__item--pink::before {
+    background-image: url(./images/tablet/image1@2x.png);
+  }
+  .products__item--peach::before {
+    background-image: url(./images/tablet/image2@2x.png);
+  }
+  .products__item--green::before {
+    background-image: url(./images/tablet/image3@2x.png);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .products__item--pink::before {
+    background-image: url(./images/desktop/image1@2x.png);
+  }
+  .products__item--peach::before {
+    background-image: url(./images/desktop/image2@2x.png);
+  }
+  .products__item--green::before {
+    background-image: url(./images/desktop/image3@2x.png);
   }
 }/*# sourceMappingURL=main.css.map */
