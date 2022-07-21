@@ -255,6 +255,30 @@ body {
   cursor: pointer;
 }
 
+.products__card {
+  transform: rotateY(0deg);
+  -webkit-animation: rotateY 3000ms ease-in-out 1000ms;
+          animation: rotateY 3000ms ease-in-out 1000ms;
+}
+
+@-webkit-keyframes rotateY {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+@keyframes rotateY {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+/* This container is needed to position the front and back side */
 @media screen and (min-width: 768px) {
   .products__suptitle {
     font-size: 26px;
@@ -372,4 +396,26 @@ body {
   .products__item--green::before {
     background-image: url(./images/desktop/image3@2x.png);
   }
+}
+.flip {
+  position: relative;
+}
+.flip > .front,
+.flip > .back {
+  display: block;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: 0.5s;
+  transition-property: transform, opacity;
+}
+.flip > .front {
+  transform: rotateY(0deg);
+}
+.flip > .back {
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(-180deg);
 }/*# sourceMappingURL=main.css.map */
